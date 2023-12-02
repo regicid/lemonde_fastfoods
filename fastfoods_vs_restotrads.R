@@ -10,7 +10,7 @@ for(i in 1:length(period)){
 df = data.frame(fastfoods=result_fastfood,Date=period)
 ggplot(df,aes(Date,fastfoods)) + geom_line() + theme_linedraw() + ylab("Nombre cumulé d'ouvertures de fastfoods")
 
-resto_trad = read.csv("~/Downloads/resto_trad_siren.csv")
+resto_trad = read.csv("resto_trad_siren.csv")
 resto_trad$dateCreationEtablissement = as.Date(resto_trad$dateCreationEtablissement)
 
 period = 1990:2023
